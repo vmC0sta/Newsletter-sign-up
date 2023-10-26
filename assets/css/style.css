@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: unset;
+}
+
+body{
+    align-items: center;
+    background-color:hsl(235, 18%, 26%);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+
+/* INICIO *CONTENT__INITIAL* */
+.content__initial{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    display: flex;
+    width:900px;
+}
+
+/* INICIO *ARTICLE* */
+article{
+    margin: 5%;
+    padding: 15px 5px ;
+}
+
+.title__article{
+    font-size: 35px;
+    margin-bottom: 5%;
+}
+
+/* INICIO *LISTS* */
+.list{
+    list-style: none;
+    margin: 10% 0;
+}
+
+.itens-list{
+    display: flex;
+    margin-bottom: 5%;
+    padding-right: 10%;
+    width: max-content;
+}
+
+.itens-list img{
+    margin-right: 20px;
+}
+/* FIM *LISTS* */
+
+/* INICIO *FORM-GROUP* */
+.form-group label{
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.labels{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group input,button{
+    display: block;
+    width: 95%;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 5% 0;
+    outline: 0;
+}
+
+.form-group input{
+    border: solid rgba(0, 0, 0, 0.1) 0.1px;
+
+    &&:hover{
+        cursor: pointer;
+        border:solid rgba(0, 0, 0) 0.1px;
+        box-shadow: 0px 1px 10px 1px rgb(209, 209, 209);
+
+    }
+}
+
+.form-group button{
+    border: none;
+    background-color:hsl(234, 29%, 20%) ;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+
+    &&:hover{
+        background-color: hsl(4, 100%, 67%);
+        box-shadow: 0px 1px 10px 10px rgb(231, 231, 231);
+
+    }
+}
+
+.validacao-label{
+    display: none;
+}
+
+.validacao-input{
+    color: hsl(4, 100%, 67%);
+    background-color:hsl(4, 100%, 67%, 0.1);
+    border: 1px solid hsl(4, 100%, 67%);
+}
+/* FIM *FORM-GROUP* */
+/* FIM ARTICLE */
+
+aside{
+    padding: 2%
+}
+/* FIM *CONTENT_INITIAL* */
+
+.content__sucess{
+    display: none;
+}
+
