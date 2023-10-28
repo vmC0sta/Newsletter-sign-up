@@ -5,6 +5,8 @@
     margin: 0;
     padding: 0;
     box-sizing: unset;
+    color: hsl(235, 18%, 26%);
+
 }
 
 body{
@@ -23,6 +25,10 @@ body{
     display: flex;
     max-width:900px;
     padding: 20px;
+}
+
+.content__sucess{
+    display: none;
 }
 
 .illustration-mobile{
@@ -120,13 +126,48 @@ article{
 .accepted-validation-label{
     color: green;
 }
-
 /* FIM *FORM-GROUP* */
+
 /* FIM ARTICLE */
+
 /* FIM *CONTENT_INITIAL* */
 
 .content__sucess{
-    display: none;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    max-width:380px;
+    padding: 3% 3% 0% 3%;
+}
+
+.content__sucess h1{
+    font-size: 50px;
+    margin: 5% 0;
+}
+
+.content__sucess p{
+    font-weight: 500;
+    margin: 5% auto;
+    line-height:25px
+}
+
+.content__sucess span{
+    font-weight: bolder;
+}
+
+.content__sucess button{
+    width: 90%;
+    border: none;
+    background-color:hsl(234, 29%, 20%) ;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10% 0;
+
+    &&:hover{
+        background-color: hsl(4, 100%, 67%);
+        box-shadow: 0px 1px 10px 10px rgb(231, 231, 231);
+
+    }
 }
 
 
@@ -160,7 +201,32 @@ article{
         width: 90%;
     }
     
+
+    .content__sucess{
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 0px;
+        padding: 0px;
+        min-width: 100vw;
+        min-height: 100vh;
+    }
     
+    .content__sucess img{
+        margin: 30% 10% 10% 10%;
+    }
+
+    .content__sucess h1{
+        margin: 5% 10%;
+    }
+    
+    .content__sucess p{
+        width: 80%;
+        margin-bottom: 50%;
+    }
+
+    .content__sucess button{
+        width: 80%;
+        margin: 0% auto;
+    }
 }
 
 
