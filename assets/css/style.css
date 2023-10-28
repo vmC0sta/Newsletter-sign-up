@@ -21,7 +21,12 @@ body{
     background-color: hsl(0, 0%, 100%);
     border-radius: 30px;
     display: flex;
-    width:900px;
+    max-width:900px;
+    padding: 20px;
+}
+
+.illustration-mobile{
+    display: none;
 }
 
 /* INICIO *ARTICLE* */
@@ -74,12 +79,11 @@ article{
 }
 
 .form-group input{
-    border: solid rgba(0, 0, 0, 0.1) 0.1px;
+    border-style: solid;
 
     &&:hover{
         cursor: pointer;
         border:solid rgba(0, 0, 0) 0.1px;
-        box-shadow: 0px 1px 10px 1px rgb(209, 209, 209);
 
     }
 }
@@ -98,24 +102,67 @@ article{
     }
 }
 
-.validacao-label{
-    display: none;
+.no-accepted-validation-label{
+    color: hsl(4, 100%, 67%);
 }
-
-.validacao-input{
+.no-accepted-validation-input{
     color: hsl(4, 100%, 67%);
     background-color:hsl(4, 100%, 67%, 0.1);
     border: 1px solid hsl(4, 100%, 67%);
 }
+
+.accepted-validation-input{
+    color:green;
+    background-color: rgba(0, 128, 0, 0.1);
+    border: 1px solid green;
+}
+
+.accepted-validation-label{
+    color: green;
+}
+
 /* FIM *FORM-GROUP* */
 /* FIM ARTICLE */
-
-aside{
-    padding: 2%
-}
 /* FIM *CONTENT_INITIAL* */
 
 .content__sucess{
     display: none;
 }
+
+
+@media only screen and (max-width: 900px){
+    .content__initial {
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 0px;
+        display: block;
+        padding: 0px;
+        min-height: 100vh;
+        margin: 0%;
+    }
+    #illustration-sign-up-desktop{
+        display: none;
+    }
+    .illustration-mobile{
+        display: block;
+        width: 100vw;
+    }
+
+    .illustration-mobile img{
+        width: 100%;
+    }
+    .itens-list{
+        width: 100%;
+        margin: 0%;
+        padding: 2%;
+    }
+
+    .form-group{
+        width: 90%;
+    }
+    
+    
+}
+
+
+
 
