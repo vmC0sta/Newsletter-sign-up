@@ -9,7 +9,7 @@
 
 
 
-Este é um projeto de formulário de inscrição em newsletter com uma mensagem de sucesso que é exibida após a inscrição bem-sucedida. Os usuários podem preencher seu endereço de e-mail e receber atualizações mensais. O projeto é responsivo e foi construído com HTML, CSS e JavaScript para garantir uma experiência agradável em dispositivos móveis e desktop.
+Este é um projeto de formulário de inscrição em newsletter com uma mensagem de sucesso que é exibida após a inscrição bem-sucedida. Os usuários podem preencher seu endereço de e-mail onde o mesmo será validado. O projeto é responsivo e foi construído com HTML, CSS e JavaScript para garantir uma experiência agradável em dispositivos móveis e desktop.
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -19,7 +19,7 @@ Este é um projeto de formulário de inscrição em newsletter com uma mensagem 
 
 ## 🚀 Visão Geral
 
-O projeto consiste em um formulário de inscrição em newsletter onde os usuários podem inserir seu endereço de e-mail e se inscrever para receber atualizações mensais. Após uma inscrição bem-sucedida, uma mensagem de sucesso é exibida com uma confirmação por e-mail.
+O projeto consiste em um formulário de inscrição em newsletter onde os usuários podem inserir seu endereço de e-mail onde o mesmo será validado. Após uma inscrição bem-sucedida, uma mensagem de sucesso é exibida com uma confirmação por e-mail.
 
 ## 🌟 Layout Responsivo
 
