@@ -1,20 +1,26 @@
-const labelEmail = document.getElementsByClassName('validacao-label')[0]
+const labelEmail = document.getElementById('validation')
 const inputEmail = document.getElementById('email');
 const btnEnviar = document.getElementById('btn-enviar');
 
-inputEmail.addEventListener('keyup', () => {
+inputEmail.addEventListener('keydown', () => {
 
     if (!validarEmail(inputEmail.value)) {
-        inputEmail.classList.add('validacao-input')
+        inputEmail.classList.remove('accepted-validation-input')
+        inputEmail.classList.add('no-accepted-validation-input')
+
+        labelEmail.classList.remove('accepted-validation-label')
+        labelEmail.classList.add('no-accepted-validation-label')
+
         labelEmail.innerHTML = 'Valid email required'
-        labelEmail.style.display = 'block'
     }
     else{
+        inputEmail.classList.remove('no-accepted-validation-input')
+        inputEmail.classList.add('accepted-validation-input')
+
+        labelEmail.classList.remove('no-accepted-validation-label')
+        labelEmail.classList.add('accepted-validation-label')
+        
         labelEmail.innerHTML = 'Perfect!'
-        labelEmail.style.color = 'green'  
-        inputEmail.style.border = 'solid 1px green'
-        inputEmail.style.background = 'white'
-        inputEmail.style.color = 'black'
     }
 })
 
